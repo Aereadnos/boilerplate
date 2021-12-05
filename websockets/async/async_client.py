@@ -17,7 +17,7 @@ async def disconnect():
     print('disconnected from server')
 
 async def main():
-    await sio.connect('http://localhost:5000')
+    await sio.connect('http://northeastern-robotics.com:5000')
     await sio.wait()
 
 if __name__ == '__main__':
