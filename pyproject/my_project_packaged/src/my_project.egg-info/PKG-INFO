@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: my_project
+Version: 0.1.0
+Summary: A sample Python project with three modules, each in its own subdirectory
+Author-email: Your Name <you@example.com>
+Description-Content-Type: text/markdown
+
+# My Project
+
+This is a sample Python project with three modules, each in its own subdirectory, packaged with pyproject.toml.

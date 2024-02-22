@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_project"
+version = "0.1.0"
+description = "A sample Python project with three modules, each in its own subdirectory"
+authors = [{name = "Your Name", email = "you@example.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+# packages = [{include = "my_project", from = "src"}]
