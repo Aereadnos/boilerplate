@@ -1,0 +1,18 @@
+stages:
+  - deploy
+
+deploy_to_server:
+  stage: deploy
+  only:
+    - main
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - chmod 600 $SSH_PRIVATE_KEY
+    - ssh-add $SSH_PRIVATE_KEY
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ssh root@66.228.57.62 "cd ~/actorai && docker compose down && docker compose pull && docker compose up -d"
+  tags:
+    - docker
+
