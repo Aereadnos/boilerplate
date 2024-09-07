@@ -1,1 +1,8 @@
-[     {         "main.py": "This file contains the FastAPI application that handles file operations. It includes endpoints for uploading, downloading, and deleting files. The critical methods are:\n\n- upload_file(file: UploadFile) -> dict: Handles file uploads and saves them to the server.\n- download_file(filename: str) -> FileResponse: Handles file downloads by returning the requested file.\n- delete_file(filename: str) -> dict: Handles file deletions by removing the specified file from the server."     },     {         "cli.py": "This file contains the Typer CLI application that serves as a wrapper to launch the FastAPI application. The critical method is:\n\n- run() -> None: Starts the FastAPI server using Uvicorn."     } ]
+[
+  {
+    "main.py": "This file contains the FastAPI application that handles file operations. It includes endpoints for uploading, downloading, and deleting files. The critical methods are:\n\n- upload_file(file: UploadFile) -> dict: Handles file uploads and saves them to the server.\n- download_file(filename: str) -> FileResponse: Handles file downloads by returning the requested file.\n- delete_file(filename: str) -> dict: Handles file deletions by removing the specified file from the server."
+  },
+  {
+    "cli.py": "This file contains the Typer CLI application that serves as a wrapper to launch the FastAPI application. The critical method is:\n\n- run() -> None: Starts the FastAPI server using Uvicorn."
+  }
+]
