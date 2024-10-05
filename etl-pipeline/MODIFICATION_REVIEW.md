@@ -1,0 +1,5 @@
+- In `s3_to_mongo.py`, ensure the MinIO and MongoDB credentials and configurations are correct.
+- In `csv_to_bucket.py`, verify the S3 client endpoint URL and credentials.
+- In `Dockerfile`, confirm the Prefect environment variables and dependencies are correctly set.
+- In `docker-compose.yml`, check service dependencies and ensure all ports and volumes are correctly mapped.
+- Ensure all file paths and object names are accurate and consistent across scripts and configurations.

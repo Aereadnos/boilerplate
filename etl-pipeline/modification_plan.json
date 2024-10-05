@@ -1,0 +1,1 @@
+[   {     "./s3_to_mongo.py": "Update the minio_client configuration to use the service name 'minio' instead of 'myminio'."   },   {     "./docker-compose.yml": "Add a 'depends_on' clause to the 'flow' service to ensure it waits for the 'minio' service to be ready before starting."   } ]
