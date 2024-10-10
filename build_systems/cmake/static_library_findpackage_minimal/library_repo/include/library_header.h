@@ -1,6 +1,7 @@
 #ifndef LIBRARY_HEADER_H
 #define LIBRARY_HEADER_H
+#include <string>
 
-void library_function();
+std::string library_function();
 
 #endif // LIBRARY_HEADER_H

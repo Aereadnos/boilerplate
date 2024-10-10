@@ -2,12 +2,14 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include "library_header.h"  // Assuming this is the header from the library
+#include <QString>
+
 
 // Function to show library output in a message box
 void showLibraryOutput() {
     QMessageBox msgBox;
     msgBox.setText("Library Output:");
-    msgBox.setInformativeText(library_function());  // Call library function and display output
+    msgBox.setInformativeText(QString::fromStdString(library_function()));  // Call library function and display output
     msgBox.exec();
 }
 
